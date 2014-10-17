@@ -6,8 +6,8 @@ define(['./app'], function(app) {
 });
 
 var ROUTES = {
-	config: {
-		app: ''
+	config : {
+		app : ''
 	},
 	load_first_list : function(list, callback) {
 		var self = ROUTES;
@@ -23,16 +23,24 @@ var ROUTES = {
 			}
 		}
 	},
-	final_callback: function(){
+	final_callback : function() {//set state
 		var self = ROUTES;
 		var app = self.config.app;
-		 app.config(function($stateProvider) {
+		app.config(function($stateProvider) {
 			$stateProvider.state('index', {
 				url : "",
 				views : {
 					"viewBody" : {
 						templateUrl : 'templates/home.html',
-						controller : 'HomeController'
+						controller : 'HomeNGController'
+					},
+				}
+			}).state('todo', {
+				url : "",
+				views : {
+					"viewBody" : {
+						templateUrl : 'templates/todo.html',
+						controller : 'TodoNGController'
 					},
 				}
 			});

@@ -1,12 +1,7 @@
 define(['./module'], function(controllers) {
 	'use strict';
-	controllers.controller('HomeController', ['$scope',
+	controllers.controller('HomeNGController', ['$scope',
 	function($scope) {
-		Home_Ctrl.init();
 
 	}]);
 });
-var Home_Ctrl = {
-	init : function() {
-	},
-};
