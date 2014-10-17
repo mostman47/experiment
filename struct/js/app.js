@@ -13,9 +13,15 @@
 define(['angular', 'uiRouter', 'handle2', 'niceScroll', './controllers/index', './directives/index', './filters/index', './services/index'], function(ng) {
 	'use strict';
 	// require(['niceScroll'], function() {
-	Helper_Ctrl.init();
+	// Helper_Ctrl.init();
 	// });
-	return ng.module('app', ['app.services', 'app.controllers', 'app.filters', 'app.directives', 'ui.router']);
+	// $.getScript( "assets/ctrlJS/ctrl_main.js" )
+	  // .done(function( script, textStatus ) {
+	    return ng.module('app', ['app.services', 'app.controllers', 'app.filters', 'app.directives', 'ui.router']);
+	  // })
+	  // .fail(function( jqxhr, settings, exception ) {
+	// });
+	
 
 });
 var Helper_Ctrl = {
