@@ -7,6 +7,7 @@ require.config({
 
 	paths : {
 		// 'jquery' : '../plugins/jquery.min',
+		'helper':'../../assets/ctrl/ctrl_helper',
 		'domReady' : '../lib/requirejs-domready/domReady',
 		'angular' : '../../assets/plugins/angular/angular.min',
 		'uiRouter' : "../lib/angular/angular-ui-router",
