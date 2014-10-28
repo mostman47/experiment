@@ -1,0 +1,20 @@
+body{
+  background-color: rgba(0,0,0,0.5);
+}
+.viewBody{
+  .container{
+  }
+  .tdl-panel{
+    &.left{
+      height: 200px;
+      width: 200px;
+      background-color: rgba(0,0,0,0.2);
+      position: absolute;
+    }
+    &.mid{
+      margin-left: 200px;
+      height: 200px;
+      background-color: #FFFFFF;
+    }
+  }
+}

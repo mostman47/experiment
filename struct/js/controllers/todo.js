@@ -6,6 +6,14 @@ define(['./module'], function(controllers) {
 		CTRL_Helper.load_script_list(pluginsList, function(){
 			CTRL_todo.init();
 		});
+		require(["../../assets/plugins/codemirror-4.7/lib/codemirror",
+		, "../../assets/plugins/codemirror-4.7/mode/htmlmixed/htmlmixed"], function(CodeMirror) {
+			CodeMirror.fromTextArea(document.getElementById("todoTextArea"), {
+				lineNumbers : true,
+				mode: "htmlmixed"
+				// matchBrackets : true
+			});
+		});
 	}]);
 });
 
